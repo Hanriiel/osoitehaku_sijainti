@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "expo": "~52.0.37",
+    "expo-location": "~18.0.7",
     "expo-status-bar": "~2.0.1",
+    "osoitehaku_sijainti": "file:",
     "react": "18.3.1",
-    "react-native": "0.76.7"
+    "react-native": "0.76.7",
+    "react-native-maps": "1.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
