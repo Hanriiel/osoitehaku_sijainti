@@ -32,7 +32,8 @@ export default function App() {
   const getAddressLocation = async () => {
     try {
       const encodedAddress = encodeURIComponent(address);
-      const apiUrl = `https://geocode.maps.co/search?q=${encodedAddress}&api_key=67c354afcbbca555489980xad81d342`;
+      const API_KEY = process.env.EXPO_PUBLIC_API_KEY;
+      const apiUrl = `https://geocode.maps.co/search?q=${encodedAddress}&api_key=${API_KEY}`;
 
       const response = await fetch(apiUrl);
       const data = await response.json();
